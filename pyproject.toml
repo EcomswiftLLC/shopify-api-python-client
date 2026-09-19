@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shopify-api-python-client"
+version = "1.0.0"
+description = "A lightweight, typed Python client for the Shopify Admin REST and GraphQL APIs with built-in rate-limit handling and pagination."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Ecom Swift LLC", email = "support@ecomswiftllc.com" }]
+requires-python = ">=3.9"
+keywords = [
+    "shopify",
+    "shopify-admin-api",
+    "shopify-api",
+    "graphql",
+    "rest-api",
+    "ecommerce",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Office/Business :: Financial :: Point-Of-Sale",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/EcomswiftLLC/shopify-api-python-client"
+Issues = "https://github.com/EcomswiftLLC/shopify-api-python-client/issues"
+
+[project.scripts]
+spc = "shopify_client.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["shopify_client*"]
